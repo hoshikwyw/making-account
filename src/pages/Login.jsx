@@ -5,6 +5,7 @@ import { AiOutlineMail } from "react-icons/ai";
 import { RiLockPasswordLine } from "react-icons/ri";
 import { FaFacebook, FaGithub, FaGoogle } from "react-icons/fa";
 import Tooltip from "@mui/material/Tooltip";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
@@ -14,8 +15,8 @@ const Login = () => {
           <div className=" backdrop-blur-sm bg-white/10 w-fit h-fit rounded login-background flex gap-5">
             <div className=" rounded-s w-[300px] text-center bg-[url(https://i.pinimg.com/564x/d1/47/43/d14743aacf65bee7bfd6b9d4d310f74d.jpg)] bg-cover bg-no-repeat bg-opacity-25 right-side">
               <div className=" bg-purple-300 h-full bg-opacity-30 rounded-s">
-                <h2 className=" flex justify-center items-center h-full font-bold text-xl italic font-serif text-white cursor-pointer">
-                  Welcome To Music-Store
+                <h2 className=" flex justify-center items-center h-full font-bold text-xl italic font-serif text-white cursor-pointer break-words px-8">
+                  Welcome Back To Music-Store
                 </h2>
               </div>
             </div>
@@ -73,7 +74,9 @@ const Login = () => {
               </div>
               <div className=" my-3 w-full flex text-sm justify-between text-white">
                 <h2>You don't account?</h2>
+                <Link to={'/register'}>
                 <button className=" hover:underline hover:text-yellow-400">Register</button>
+                </Link>
               </div>
               <button className=" hover:bg-[#9ab1dda6] border border-[#ffffff9f] text-white px-3 py-1 rounded font-semibold mt-5">
                 Log In
