@@ -1,0 +1,9 @@
+.login-background {
+    box-shadow: -3px 2px 20px #ffffff94;
+}
+@media (max-width: 600px) {
+    .right-side {
+        position: absolute;
+        left: -1000000px;
+    }
+}
