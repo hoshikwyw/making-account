@@ -1,13 +1,13 @@
 import React from "react";
 import "../components/login.css";
 import login from "../assets/avatar.jpg";
-import { AiOutlineMail } from "react-icons/ai";
-import { RiLockPasswordLine } from "react-icons/ri";
+import { AiOutlineMail,AiOutlinePhone } from "react-icons/ai";
 import { FaFacebook, FaGithub, FaGoogle } from "react-icons/fa";
+import {GoPerson} from "react-icons/go"
 import Tooltip from "@mui/material/Tooltip";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { VscEye, VscEyeClosed } from "react-icons/vsc";
+import { VscEye, VscEyeClosed,VscPerson } from "react-icons/vsc";
 
 const Register = () => {
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
@@ -76,7 +76,7 @@ const Register = () => {
                 <div className=" flex flex-col md:flex-row gap-5">
                   <div className=" flex items-center gap-3 px-3 py-1  ">
                     <h2 className=" text-xl">
-                      <AiOutlineMail />
+                      <GoPerson />
                     </h2>
                     <input
                       type="text"
@@ -87,7 +87,7 @@ const Register = () => {
                   </div>
                   <div className=" flex items-center gap-3 px-3 py-1  ">
                     <h2 className=" text-xl">
-                      <AiOutlineMail />
+                      <VscPerson />
                     </h2>
                     <input
                       type="text"
@@ -97,7 +97,7 @@ const Register = () => {
                     />
                   </div>
                 </div>
-                {/* email and date section  */}
+                {/* email and phone section  */}
                 <div className=" flex flex-col md:flex-row gap-5">
                   <div className=" flex items-center gap-3 px-3 py-1  ">
                     <h2 className=" text-xl">
@@ -112,7 +112,7 @@ const Register = () => {
                   </div>
                   <div className=" flex items-center gap-3 px-3 py-1  ">
                     <h2 className=" text-xl">
-                      <AiOutlineMail />
+                      <AiOutlinePhone />
                     </h2>
                     <input
                       type="tel"
